@@ -85,7 +85,6 @@ class ComputerPlayer
 
 	def pick_secret_word
 		@secret_word = @dictionary.sample.chomp.split("")
-		p secret_word
 		disguised_word = ""
 		secret_word.length.times { disguised_word << "_" }
 		p disguised_word
